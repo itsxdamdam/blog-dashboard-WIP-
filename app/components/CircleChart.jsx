@@ -15,16 +15,16 @@ ChartJS.register(
 
 async function fetchData() {
   const res = await fetch('https://fe-task-api.mainstack.io/')
+
   const data = await res.json()
 
   return data
 }
 
-const DoughnutChart = async () => {
+const CircleChart = async() => {
   const data = await fetchData();
-  const perc = data.top_locations.map(({percent}) => percent);
-  const labels = data.top_locations.map(({country}) => country);
-
+  const perc = data.top_sources.map(({percent}) => percent);
+  const labels = data.top_sources.map(({source}) => source);
   return (
     <div>
       <div className="dough">
@@ -69,4 +69,4 @@ const DoughnutChart = async () => {
   )
 }
 
-export default DoughnutChart
+export default CircleChart

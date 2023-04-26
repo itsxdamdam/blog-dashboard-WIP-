@@ -1,6 +1,3 @@
-* {
-  box-sizing: border-box;
-}
 
 :root {
   --primary-color: #fff;
@@ -23,7 +20,7 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  padding: 1rem 2rem;
+  padding: 1rem;
   flex-grow: 4;
   
   /* justify-content: space-evenly; */
@@ -144,14 +141,17 @@ body {
   animation: spin 1s linear infinite;
 }
 
-/* .card-container {
+.card-container {
   display: flex;
-} */
+  justify-content: space-between;
+}
 
-/* .card-text,
-.locations {
-  display: flex;
-} */
+.cards {
+  border: 2px solid #EFF1F6;
+  border-radius: 10px;
+  padding: 0px 10px;
+  max-width: 50%;
+}
 
 .card-top {
   display: flex;
@@ -178,9 +178,10 @@ body {
 .locations {
   display: flex;
   align-items: center;
+  padding: 10px 0px;
 }
 
-.flag {
+span .flag {
   height: 20px;
   width: 30px;
   border-radius: 5px !important;
@@ -188,6 +189,24 @@ body {
   align-self: center;
   align-items: center;
 }
+
+svg {
+  display: block;
+  border-radius: 5px !important;
+  height: 20px;
+  width: 30px;
+}
+
+/* span .icon { */
+  /* display: none; */
+  /* height: 20px; */
+  /* width: 30px; */
+  /* padding-right: 5px; */
+  /* padding-top: 5px;
+  justify-content: center;
+  align-items: center; */
+/* } */
+
 
 .c-text,
 .l-text {
