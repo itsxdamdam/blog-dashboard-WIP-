@@ -9,7 +9,7 @@ const LinkedInIcon = () => {
     >
     
       <path 
-        fill-rule="evenodd"     clip-rule="evenodd" 
+        fillRule="evenodd"     clipRule="evenodd" 
         d="M22 4.5C22 3.1202 20.8798 2 19.5 2H4.5C3.1202 2 2 3.1202 2 4.5V19.5C2 20.8798 3.1202 22 4.5 22H19.5C20.8798 22 22 20.8798 22 19.5V4.5Z" 
         fill="#2867B2"
       />

@@ -25,9 +25,9 @@ const InstagramIcon = () => {
           y2="3.86261"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFDD55" />
-          <stop offset="0.5" stop-color="#FF543E" />
-          <stop offset="1" stop-color="#C837AB" />
+          <stop stopColor="#FFDD55" />
+          <stop offset="0.5" stopColor="#FF543E" />
+          <stop offset="1" stopColor="#C837AB" />
         </linearGradient>
       </defs>
     </svg>

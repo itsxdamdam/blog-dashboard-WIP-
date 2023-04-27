@@ -65,7 +65,7 @@ const Charts = async() => {
   const sources = data.top_sources
   return (
     <div>
-      <LineChart className="cards"/>
+      <LineChart />
       <br />
       <div className="card-container">
         <div className="cards">

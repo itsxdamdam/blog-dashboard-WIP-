@@ -23,6 +23,8 @@ ChartJS.register(
 )
 import { Line } from "react-chartjs-2"
 import dayjs from 'dayjs';
+import { AiOutlineInfoCircle } from "react-icons/ai";
+
 
 async function fetchData() {
   const res = await fetch('https://fe-task-api.mainstack.io/')
@@ -39,8 +41,17 @@ const LineChart = async() => {
   
   const linedata = Object.values(data.graph_data.views)
 
+  console.log(linedata);
+
   return (
-    <div>
+    <div className="line-card">
+      <div className="line-chart-top">
+        <h2 className="line-text-margin">Page Views</h2>
+        <AiOutlineInfoCircle className="line-top-txt"/>
+        
+      </div>
+      <p className="line-top-txt line-text-margin">All time</p>
+      <h1>{Math.max(...linedata)}</h1>
       <Line 
         data={{
           labels,

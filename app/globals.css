@@ -29,7 +29,7 @@ body {
 .sidebar {
   display: flex;
   flex-direction: column;
-  border-right: 3px #EFF1F6 solid;
+  border-right: 2px #EFF1F6 solid;
   padding: 1rem 0rem;
 
 }
@@ -123,6 +123,28 @@ body {
 .right a:focus,
 .right a:active{
   text-decoration: underline;
+}
+
+.line-card {
+  border: 2px solid #EFF1F6;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.line-chart-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line-top-txt {
+  color: #56616B;
+}
+
+.line-text-margin {
+  margin: 0;
+  padding: 5px 0px;
 }
 
 .loader {
