@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 :root {
   --primary-color: #fff;
@@ -270,6 +273,11 @@ svg {
   cursor: pointer;
 }
 
+.filter .active {
+  color: var(--text-orange);
+  border: 1px solid var(--text-orange);
+}
+
 .filter .btn:hover,
 .filter .btn:active,
 .filter .btn:focus {
@@ -281,5 +289,15 @@ svg {
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+    flex-direction: column;
+    border-right: 2px #EFF1F6 solid;
+    padding: 1rem 0rem;
+  
   }
 }
