@@ -13,11 +13,13 @@ body {
   padding: 0;
   font-size: 16px;
   color: #131316;
+  max-width: 100%;
+  /* overflow-x: hidden; */
 }
 
 .container {
   display: flex;
-  /* max-width: 1100px; */
+  max-width: 100%;
 }
 
 .main-container {
@@ -132,7 +134,7 @@ body {
   border: 2px solid #EFF1F6;
   border-radius: 10px;
   padding: 1rem;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .line-chart-top {
@@ -147,7 +149,7 @@ body {
 
 .line-text-margin {
   margin: 0;
-  padding: 5px 0px;
+  padding: 0.3rem 0;
 }
 
 .loader {
@@ -174,7 +176,7 @@ body {
 .cards {
   border: 2px solid #EFF1F6;
   border-radius: 10px;
-  padding: 0px 10px;
+  padding: 0rem 0.8rem;
   max-width: 50%;
 }
 
@@ -203,21 +205,19 @@ body {
 .locations {
   display: flex;
   align-items: center;
-  padding: 10px 0px;
+  padding: 0.7rem 0rem;
 }
 
 span .flag {
   height: 20px;
   width: 30px;
-  border-radius: 5px !important;
   padding-right: 5px;
-  align-self: center;
   align-items: center;
 }
 
 svg {
   display: block;
-  border-radius: 5px !important;
+  border-radius: 5px;
   height: 20px;
   width: 30px;
 }
@@ -248,11 +248,11 @@ svg {
 
 /* .chart-cards {
  width: 50%;
-}
+} */
 
-.dough {
-  width: 100%;
-  height: 100%;
+/* .dough {
+  width: 70%;
+  height: 70%;
 } */
 
 .filter {
@@ -292,12 +292,53 @@ svg {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .container {
+    display: block;
+  }
+
   .sidebar {
     display: none;
+  }
+
+  .main-container {
+    display: flex;
     flex-direction: column;
-    border-right: 2px #EFF1F6 solid;
-    padding: 1rem 0rem;
-  
+    padding: 1rem;
+    flex-shrink: 4;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cards {
+    max-width: 100%;
+    margin: 10px 0px;
+  }
+
+  .card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .filter {
+    width: 100%;
+  }
+
+  .filter .btn {
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
+  }
+
+  .chartheader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

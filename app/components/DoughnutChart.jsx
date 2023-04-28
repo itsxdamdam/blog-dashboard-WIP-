@@ -15,6 +15,7 @@ ChartJS.register(
 
 async function fetchData() {
   const res = await fetch('https://fe-task-api.mainstack.io/')
+  await new Promise((resolve => setTimeout(resolve, 1000))) //wait 1 second
   const data = await res.json()
 
   return data
