@@ -34,7 +34,7 @@ body {
 .sidebar {
   display: flex;
   flex-direction: column;
-  border-right: 2px #EFF1F6 solid;
+  border-right: 1px #EFF1F6 solid;
   padding: 1rem 0rem;
 
 }
@@ -131,8 +131,8 @@ body {
 }
 
 .line-card {
-  border: 2px solid #EFF1F6;
-  border-radius: 10px;
+  border: 1px solid #EFF1F6;
+  border-radius: 15px;
   padding: 1rem;
   /* max-width: 100%; */
 }
@@ -174,8 +174,8 @@ body {
 }
 
 .cards {
-  border: 2px solid #EFF1F6;
-  border-radius: 10px;
+  border: 1px solid #EFF1F6;
+  border-radius: 15px;
   padding: 0rem 0.8rem;
   max-width: 50%;
 }
