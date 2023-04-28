@@ -1,6 +1,7 @@
 import LineChart from './LineChart'
 import DoughnutChart  from './DoughnutChart'
 import CircleChart from './CircleChart';
+import Filter from './Filter';
 import Link from 'next/link'
 import { GB, NG, DE, GH, FI } from "country-flag-icons/react/3x2";
 import { FcGoogle } from "react-icons/fc";
@@ -65,6 +66,7 @@ const Charts = async() => {
   const sources = data.top_sources
   return (
     <div>
+      <Filter />
       <LineChart />
       <br />
       <div className="card-container">
@@ -116,8 +118,8 @@ const Charts = async() => {
         </div>
       </div>
     </div>
-    
   
+    
   )
 }
 

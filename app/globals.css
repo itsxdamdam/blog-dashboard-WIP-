@@ -252,6 +252,31 @@ svg {
   height: 100%;
 } */
 
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 70%;
+}
+
+.filter .btn {
+  font-weight: bold;
+  border: 1px solid #EFF1F6;
+  background: #fff;
+  color: #31373D;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.filter .btn:hover,
+.filter .btn:active,
+.filter .btn:focus {
+  color: var(--text-orange);
+  border: 1px solid var(--text-orange);
+
+}
 
 @keyframes spin {
   to {

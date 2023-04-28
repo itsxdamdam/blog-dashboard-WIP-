@@ -24,6 +24,7 @@ ChartJS.register(
 import { Line } from "react-chartjs-2"
 import dayjs from 'dayjs';
 import { AiOutlineInfoCircle } from "react-icons/ai";
+import Link from "next/link";
 
 
 async function fetchData() {
@@ -41,14 +42,13 @@ const LineChart = async() => {
   
   const linedata = Object.values(data.graph_data.views)
 
-  console.log(linedata);
-
   return (
     <div className="line-card">
       <div className="line-chart-top">
         <h2 className="line-text-margin">Page Views</h2>
-        <AiOutlineInfoCircle className="line-top-txt"/>
-        
+        <Link href='/information'>
+          <AiOutlineInfoCircle className="line-top-txt"/>
+        </Link>        
       </div>
       <p className="line-top-txt line-text-margin">All time</p>
       <h1>{Math.max(...linedata)}</h1>
