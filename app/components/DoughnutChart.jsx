@@ -13,16 +13,8 @@ ChartJS.register(
   Legend
 );
 
-async function fetchData() {
-  const res = await fetch('https://fe-task-api.mainstack.io/')
-  await new Promise((resolve => setTimeout(resolve, 1000))) //wait 1 second
-  const data = await res.json()
-
-  return data
-}
-
-const DoughnutChart = async () => {
-  const data = await fetchData();
+const DoughnutChart = async (props) => {
+  const data = props.data
   const perc = data.top_locations.map(({percent}) => percent);
   const labels = data.top_locations.map(({country}) => country);
 

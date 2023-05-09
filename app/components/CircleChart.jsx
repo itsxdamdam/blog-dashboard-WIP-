@@ -13,16 +13,9 @@ ChartJS.register(
   Legend
 );
 
-async function fetchData() {
-  const res = await fetch('https://fe-task-api.mainstack.io/')
 
-  const data = await res.json()
-
-  return data
-}
-
-const CircleChart = async() => {
-  const data = await fetchData();
+const CircleChart = async(props) => {
+  const data = props.data
   const perc = data.top_sources.map(({percent}) => percent);
   const labels = data.top_sources.map(({source}) => source);
   return (

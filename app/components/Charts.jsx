@@ -66,8 +66,8 @@ const Charts = async() => {
   const sources = data.top_sources
   return (
     <div>
-      <Filter />
-      <LineChart />
+      <Filter data={data}/>
+      <LineChart data={data}/>
       <br />
       <div className="card-container">
         <div className="cards">
@@ -90,7 +90,7 @@ const Charts = async() => {
                 </div>
               ))}
             </div>
-            <DoughnutChart />
+            <DoughnutChart data={data}/>
           </div>
         </div>
         <div className="cards">
@@ -113,7 +113,7 @@ const Charts = async() => {
                 </div>
               ))}
             </div>
-            <CircleChart />
+            <CircleChart data={data}/>
           </div>
         </div>
       </div>
