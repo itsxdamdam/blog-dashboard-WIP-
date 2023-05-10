@@ -23,9 +23,11 @@ async function get1Day() {
 
 
 const Filter = async(props) => {
+  const [lineData, setLineData] = useState(data)
   const [ filter, setFilter ] = useState('All Time')
   const data = Object.entries(props.data.graph_data.views)
-  
+  const oneDay = Math.floor(Math.random() * 10)
+
   return (
     <div className="filter">
       <option value="1day" className="btn">1 Day</option>

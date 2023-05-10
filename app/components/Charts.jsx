@@ -61,12 +61,12 @@ async function fetchData() {
 
 const Charts = async() => {
   const data = await fetchData();
-  // const perc = data.top_locations.map(({percent}) => percent);
+  
   const locations = data.top_locations
   const sources = data.top_sources
   return (
     <div>
-      <Filter data={data}/>
+      {/* <Filter data={data}/> */}
       <LineChart data={data}/>
       <br />
       <div className="card-container">
